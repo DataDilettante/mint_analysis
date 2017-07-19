@@ -4,8 +4,10 @@
 import pandas as pd
 import numpy as np
 
+# Import the config settings
+import config
 
-def import_transactions(path='data/transactions.csv'):
+def import_transactions(path=config.DATA_PATH):
     """
     This function gets all the transactions from the default location, unless otherwise
     specified, and returns a data frame
